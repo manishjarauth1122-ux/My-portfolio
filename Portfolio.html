@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Manish Kumar | Software Developer</title>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI';scroll-behavior:smooth;}
+
+body{
+background:linear-gradient(270deg,#020617,#0f172a,#020617);
+background-size:400% 400%;
+animation:bg 12s ease infinite;
+color:white;
+overflow-x:hidden;
+}
+
+@keyframes bg{
+0%{background-position:0%}
+50%{background-position:100%}
+100%{background-position:0%}
+}
+
+/* Navbar */
+nav{
+display:flex;justify-content:space-between;align-items:center;
+padding:15px 40px;
+background:rgba(255,255,255,0.05);
+backdrop-filter:blur(10px);
+position:sticky;top:0;z-index:100;
+}
+nav h2{color:#38bdf8;}
+nav a{color:white;margin-left:20px;text-decoration:none;transition:0.3s;}
+nav a:hover{color:#38bdf8;}
+
+/* Hero */
+.hero{text-align:center;padding:100px 20px;}
+.hero img{
+width:160px;height:160px;border-radius:50%;
+border:3px solid #38bdf8;
+box-shadow:0 0 25px #38bdf8;
+transition:0.5s;
+}
+.hero img:hover{transform:scale(1.1) rotate(5deg);}
+.hero h1{font-size:48px;margin-top:15px;}
+.hero span{color:#38bdf8;}
+.typing{color:#38bdf8;font-size:22px;margin-top:10px}
+
+/* Sections */
+section{
+padding:60px 20px;
+opacity:0;
+transform:translateY(50px);
+transition:1s;
+}
+.show{opacity:1;transform:translateY(0);}
+
+/* Cards */
+.card{
+max-width:900px;
+margin:20px auto;
+padding:25px;
+border-radius:15px;
+background:rgba(255,255,255,0.05);
+backdrop-filter:blur(10px);
+transition:0.4s;
+transform-style:preserve-3d;
+box-shadow: 2px 2px 20px rgba(204, 13, 204, 0.5);
+}
+
+/* 3D tilt (mouse move) */
+.card:hover{
+transform:rotateY(10deg) rotateX(10deg) scale(1.05);
+}
+
+/* Skills */
+.skill{margin:15px 0;}
+.bar{background:#111;border-radius:10px;}
+.fill{
+height:10px;
+background:#38bdf8;
+border-radius:10px;
+animation:fillAnim 2s ease;
+box-shadow: 5px 5px 20px rgba(204, 13, 204, 0.5);
+}
+@keyframes fillAnim{
+from{width:0}
+}
+
+/* Projects */
+.projects{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+box-shadow: 5px 5px 20px rgba(204, 13, 204, 0.5);
+}
+
+/* Buttons */
+.btn{
+padding:12px 25px;
+margin:10px;
+background:linear-gradient(45deg,#38bdf8,#06b6d4);
+border-radius:30px;
+text-decoration:none;
+color:black;
+font-weight:bold;
+display:inline-block;
+transition:0.3s;
+box-shadow: 5px 5px 10px rgba(10, 153, 215, 0.5);
+}
+.btn:hover{transform:scale(1.1);}
+
+/* Footer */
+footer{text-align:center;padding:20px;opacity:0.7;}
+</style>
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav>
+<h2>Manish</h2>
+<div>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
+<a href="#college">College</a>
+</div>
+</nav>
+
+<!-- Hero -->
+<div class="hero">
+<img src="Manish photo.png">
+<h1>Hi, I'm <span>Manish Kumar</span></h1>
+<div class="typing" id="typing"></div>
+
+<a href="https://github.com/manishjarauth1122-ux" target="_blank" class="btn">GitHub</a>
+<a href="https://www.linkedin.com/in/manish-kumar-485b87366/" target="_blank" class="btn">LinkedIn</a>
+<a href="https://urise.up.gov.in/poly/1599" class="btn">College</a>
+<a href="https://www.youtube.com/@Project.coding.java0101" class="btn">MY Youtube</a>
+<a href="search-ms:displayname=Search%20Results%20in%20Desktop&crumb=System.Generic.String%3A(resume%20ats)&crumb=location:C%3A%5CUsers%5Cmanis%5COneDrive%5CDesktop" class="btn">Resume</a>
+</div>
+
+<!-- About -->
+<section id="about">
+<div class="card">
+<h2>About Me</h2>
+<p>
+ <i><b>Motivated B.Tech Computer Science (AI) student with a passion for software development, problem-solving, and building impactful real-world applications.
+ Skilled in HTML/CSS, document formatting, and digital identity solutions, with hands-on experience creating practical tools and guides for academic and government use. 
+ Driven to apply AI and software engineering to solve challenges in education and governance.</b></i>
+</p>
+</div>
+</section>
+
+<!-- Skills -->
+<section id="skills">
+<div class="card">
+<h2>Skills</h2>
+
+<div class="skill">
+<p>Python</p>
+<div class="bar"><div class="fill" style="width:85%"></div></div>
+</div>
+
+<div class="skill">
+<p>Java (DSA)</p>
+<div class="bar"><div class="fill" style="width:80%"></div></div>
+</div>
+
+<div class="skill">
+<p>HTML & CSS</p>
+<div class="bar"><div class="fill" style="width:90%"></div></div>
+</div>
+<div class="skill">
+<p>MS Excel & MS Word , PowerPoint</p>
+<div class="bar"><div class="fill" style="width:90%"></div></div>
+</div>
+
+</div>
+</section>
+
+<!-- Projects -->
+<section id="projects">
+<h2 style="text-align:center;">Projects</h2>
+
+<div class="projects">
+
+<div class="card">
+<h3>Manish Sidebar UI</h3>
+<p>Modern sidebar UI for a web application.</p>
+</div>
+
+<div class="card">
+<h3>Calculator</h3>
+<p>Simple calculator with basic arithmetic operations.</p>
+</div>
+
+<div class="card">
+<h3>Portfolio Website</h3>
+<p>Modern responsive developer portfolio.</p>
+</div>
+
+</div>
+</section>
+
+<!-- Contact -->
+<section id="contact"  class="show">
+<div class="card">
+<h1>Contact :-</h2>
+<p>Email: manishofficalproject0@gmail.com</p>
+<p>Phone: 9720545020</p>
+<h2>Address:-</h2>
+    <p>Kyoli kalan post Asgarpur</p>
+<h3>District:</h3>
+    <p>Bulandshahr, Uttar Pradesh</p>
+
+</div>
+</section>
+
+<!-- College -->
+<section id="college" class="show">
+  <div class="card">
+    <h2>My College :-</h2>
+    <p><b>Shivdan Singh Institute of Technology & Management</b></p>
+    <p>Affiliated to: Dr. A.P.J. Abdul Kalam Technical University (AKTU)</p>
+    <p>Course: B.Tech in Computer Science (Artificial Intelligence)</p>
+    <p>Batch: 2023 - 2027</p>
+    <p>Location: Aligarh, Uttar Pradesh</p>
+  </div>
+</section>
+
+<footer>
+<p>© 2026 Manish Kumar</p>
+</footer>
+
+<script>
+// Typing Effect
+const words=["Web Developer","DSA Learner","Future Software Engineer"];
+let i=0,j=0,word="",del=false;
+
+function type(){
+word=words[i];
+if(!del){
+document.getElementById("typing").innerText=word.substring(0,j++);
+if(j>word.length){del=true;setTimeout(type,1000);return;}
+}else{
+document.getElementById("typing").innerText=word.substring(0,j--);
+if(j==0){del=false;i=(i+1)%words.length;}
+}
+setTimeout(type,del?50:100);
+}
+type();
+
+// Scroll Reveal
+const sections=document.querySelectorAll("section");
+window.addEventListener("scroll",()=>{
+sections.forEach(sec=>{
+let top=window.scrollY;
+let offset=sec.offsetTop-300;
+if(top>offset){
+sec.classList.add("show");
+}
+});
+});
+</script>
+
+</body>
+</html>
